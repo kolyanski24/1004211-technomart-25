@@ -25,7 +25,7 @@
     <b class="registration">
       <a href="registration.html">Регистрация</a>
     </b>
-    <ul>
+    <ul class="top-menu">
       <li><a href="index.html">Главная</a></li>
       <li><a href="company.html">Компания</a></li>
       <li><a href="catalog.html">Каталог</a></li>
@@ -36,8 +36,8 @@
     </ul>
   </nav>
   </header>
-    <main>
-      <section>
+  <main>
+    <section>
       <h2>Компания "Техномарт"</h2>
       <p>
         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -58,8 +58,8 @@
         <img src="img/map.png">
         <a href="write_us.html">Заблудились? Напишите нам!</a>
       </p>
-      </section>
-    </main>
+    </section>
+  </main>
   <footer>
     <a class="footer-logo" href="index.html">
       <img src="img/logo-technomart.svg" alt="Логотип магазина 'Техномарт'">
@@ -87,9 +87,9 @@
       Все права защищены
     </b>
     <div class="footer-social">
-      <a href="#">ВК</a>
-      <a href="#">ФБ</a>
-      <a href="#">Инста</a>
+      <a href="#" class="footer-social footer-social-vk">ВК</a>
+      <a href="#" class="footer-social footer-social-fb">ФБ</a>
+      <a href="#" class="footer-social footer-social-insta">Инста</a>
     </div>
     <b>Обратная связь:</b>
     <a href="#">mail@htmlacademy.ru</a>
@@ -97,10 +97,18 @@
     <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
   </footer>
   <section class="modal modal-login">
-  <h2>Личный кабинет</h2>
-  <p>Введите свой логин и пароль.</p>
-  <!-- Здесь будет форма -->
-  <span class="modal-close">x</span>
+    <form>
+      <b class="form-name">Ваше имя:</b>
+      <input type="name" name="name" value="Имя Фамилия">
+      <b class="form-mail">Ваш e-mail:</b>
+      <input type="mail" name="mail" value="email@example.com">
+      <b class="form-text">Текст письма:</b>
+      <p>
+        <textarea rows="10" cols="45" name="text"></textarea>
+      </p>
+      <input type="submit" name="submit" value="Отправить">
+      <span class="modal-close">x</span>
+    </form>
   </section>
-  </body>
+</body>
 </html>
