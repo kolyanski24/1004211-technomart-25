@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Cuprum', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #32425c;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+}
+
+.main-navigation p {
+  font-family: 'Cuprum', sans-serif;
+  font-style: italic;
+  color: #ee3643;
+  line-height: 23px;
+  font-size: 16px;
+}
+
+.main-navigation a:hover,
+.bottom-navigation a:hover {
+  background-color: #293449;
+}
+
+.main-navigation a:focus,
+.bottom-navigation a:focus {
+  background-color: #1d2739;
+}
+
+.main-navigation,
+.bottom-navigation {
+  list-style: none;
+}
+
+.main-navigation,
+.bottom-navigation {
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.main-header-logo {
+  width: 220px;
+  height: 42px;
+  background-color: #ee3643;
+  text-align: center;
+  vertical-align: middle;
+  background-position: center;
+  border-bottom: 5px solid #b52933;
+}
+
+.header-section-top {
+  display: flex;
+  width: 100%;
+  background-color: #32425c;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.header-section-bottom {
+  display: flex;
+  background-color: #f3f7f8;
+  height: 280px;
+}
+
+.company-description {
+  background-color: #ffffff;
+  color: black;
+}
+
+.company-description h2 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.company-description p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.footer-top {
+  display: flex;
+  height: 195px;
+  background-color: #32425c;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-products li {
+  list-style: none;
+}
+
+.footer-products a {
+  color: #ffda96;
+}
+
+.footer-bottom {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #293449;
+}
+
+.top-menu {
+  position: absolute;
+  width: 940px;
+  top: 196px;
+}
+
+.top-menu li {
+  display: inline-block;
+  list-style: none;
+  background-color: #32425c;
+}
+
+.top-menu a {
+  display: block;
+  width: auto;
+  padding: 10px 15px;
+  border-left: 5px solid #32425c;
+  border-right: 5px solid #32425c;
+}
+
+.modal {
+  display: none;
+}
+
+.footer-contacts {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  text-decoration: none;
+}
