@@ -17,15 +17,20 @@
             <img src="img/logo-technomart.svg" width="110" height="18" alt="Логотип магазина 'Техномарт'">
           </a>
           <form>
-            <input type="search" name="search" value="Поиск:">
+            <input type="search" name="search" placeholder="Поиск:">
           </form>
         </div>
         <div class="management-container">
           <ul class="management">
-            <li><a href="#" class="bookmarks">Закладки: 0</a></li>
             <li>
-              <a href="#" class="basket">Корзина: 0</a></li>
-            <li><a href="#" class="order">Оформить заказ</a></li>
+              <a class="bookmarks" href="#">Закладки: 0</a>
+            </li>
+            <li>
+              <a class="basket" href="#">Корзина: 0</a>
+            </li>
+            <li>
+              <a href="#" class="order">Оформить заказ</a>
+            </li>
           </ul>
         </div>
       </section>
@@ -39,7 +44,7 @@
           </address>
           <div class="login-buttons">
             <b class="login">
-              <a href="login.html">Войти</a>
+              <a class="login-link" href="login.html">Войти</a>
             </b>
             <b class="registration">
               <a href="registration.html">Регистрация</a>
@@ -62,10 +67,10 @@
     <div class="separator">
       <section class="company-description">
         <h2>Компания "Техномарт"</h2>
-        <p>
+        <p class="info1">
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br>  строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
         </p>
-        <p>
+        <p class="info2">
           Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:
         </p>
@@ -74,7 +79,9 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="about_us.html">Подробнее о компании</a>
+        <a href="about_us.html">
+          <button class="about">Подробнее о компании</button>
+        </a>
       </section>
       <section class="map">
         <h2>Контакты</h2>
@@ -82,8 +89,14 @@
           Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
-        <img src="img/map.png" height="158" width="300" alt="ул.Б.Конюшенная19">
-        <a href="write_us.html">Заблудились? Напишите нам!</a>
+        <div class="map-image">
+          <img src="img/map.png" height="158" width="300" alt="ул.Б.Конюшенная19">
+        </div>
+        <a href="write_us.html">
+          <button class="write">
+          Заблудились? Напишите нам!
+          </button>
+        </a>
       </section>
     </div>
   </main>

@@ -3,7 +3,6 @@ body {
   padding: 0;
 
   font-family: 'Cuprum', sans-serif;
-  font-family: 'PT Sans', sans-serif;
   font-size: 17px;
   line-height: 24px;
   color: #32425c;
@@ -15,12 +14,10 @@ a {
 }
 
 .main-navigation {
-  font-family: 'Cuprum', sans-serif;
   font-size: 17px;
 }
 
 .main-navigation p {
-  font-family: 'Cuprum', sans-serif;
   font-style: italic;
   color: #ee3643;
   line-height: 23px;
@@ -75,7 +72,6 @@ a {
 
 .logo-search  input {
   font-size: 17px;
-  font-family: "Cuprum", sans-serif;
   line-height: 18px;
   display: block;
   background-color: #32425c;
@@ -83,11 +79,42 @@ a {
   height: 42px;
   border-color: transparent;
 }
-
 .management li {
   position: relative;
   top: -17px;
   display: inline-block;
+}
+
+.management .bookmarks {
+  position: relative;
+  padding-left: 25px;
+}
+
+.bookmarks::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url("img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.5;
+  color: white;
+}
+
+.basket::before {
+  content: "";
+  display: block;
+  background: url("img/icon-cart.svg") #ffffff no-repeat;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 6px 0 0;
+  z-index: 1;
+  color: white;
 }
 
 .order {
@@ -111,7 +138,16 @@ a {
   padding-left: 130px;
 }
 
+.description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  margin-left: 53px;
+}
+
 .header-middle {
+  margin-top: 46px;
   display: flex;
   justify-content: space-between;
 }
@@ -134,6 +170,10 @@ address strong {
   text-decoration: none;
 }
 
+.login-buttons {
+  display: flex;
+}
+
 .login,
 .registration {
   display: block;
@@ -143,7 +183,27 @@ address strong {
 .login a,
 .registration a {
   color: black;
-  padding: 10px 15px;
+}
+
+.top-menu {
+  position: relative;
+  top: -60px;
+  right: 25%;
+  left: 25%;
+}
+
+.top-menu li {
+  display: inline-block;
+  list-style: none;
+  background-color: #32425c;
+  margin-right: -5px;
+}
+
+.top-menu a {
+  display: block;
+  width: auto;
+  padding: 15px 30px;
+  vertical-align: middle;
 }
 
 main {
@@ -165,7 +225,6 @@ main {
 }
 
 h2 {
-  font-family: "Cuprum", sans-serif;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -176,6 +235,7 @@ main p {
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin-bottom: 38px;
 }
 
 .main a {
@@ -185,15 +245,47 @@ main p {
   text-decoration: none;
   padding: 10px 15px;
   background-color: #ee3643;
-  margin-bottom: 85px;
+}
+
+.partners {
+  margin-bottom: 35px;
 }
 
 .partners li {
-  font-family: "Cuprum", sans-serif;
   font-size: 18px;
   line-height: 20px;
   list-style: none;
-  padding: 5px 10px;
+  padding: 10px 10px;
+}
+
+.about {
+  display: block;
+  height: 38px;
+  width: 220px;
+  background-color: #ee3643;
+  color: white;
+  border: 1px solid #ee3643;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 85px;
+}
+
+.map-image {
+  margin-bottom: 40px;
+}
+
+.write {
+  display: block;
+  height: 38px;
+  width: 300px;
+  background-color: #ee3643;
+  color: white;
+  border: 1px solid #ee3643;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 85px;
 }
 
 .map {
@@ -228,8 +320,11 @@ main p {
 }
 
 .footer-contacts {
+  font-size: 18px;
+  line-height: 24px;
   display: block;
   width: 460px;
+  margin-top: 40px;
 }
 
 .company {
@@ -238,10 +333,15 @@ main p {
 
 .company li {
   display: inline-block;
+  list-style: none;
+  background-color: #32425c;
+  margin-right: -5px;
 }
 
 .company a {
   display: block;
+  width: auto;
+  padding: 15px 30px;
 }
 
 .footer-products {
@@ -251,10 +351,14 @@ main p {
 .footer-products li {
   display: inline-block;
   list-style: none;
+  background-color: #32425c;
+  margin-right: -5px;
 }
 
 .footer-products a {
   display: block;
+  width: auto;
+  padding: 15px 30px;
   color: #ffda96;
 }
 
@@ -265,27 +369,20 @@ main p {
   display: flex;
   height: 108px;
   justify-content: space-between;
+  align-items: center;
   color: #ffffff;
   padding-right: 130px;
   padding-left: 130px;
 }
 
-.top-menu {
-  position: relative;
-  top: -60px;
+.copyright {
+  font-size: 16px;
+  line-height: 18px
 }
 
-.top-menu li {
-  display: inline-block;
-  list-style: none;
-  background-color: #32425c;
-  margin-right: -5px;
-}
-
-.top-menu a {
-  display: block;
-  width: auto;
-  padding: 15px 30px;
+.creators {
+  font-size: 16px;
+  line-height: 18px
 }
 
 .modal {
@@ -341,7 +438,6 @@ h1 {
   line-height: 30px;
   padding: 33px 30px;
   background-color: #f2f6f8;
-  font-family: "Cuprum", sans-serif;
   text-transform: uppercase;
   color: #32425c;
   font-weight: normal;
@@ -395,7 +491,7 @@ legend {
   width: 218px;
   margin-right: 20px;
   margin-bottom: 20px;
-
+  font-family: "PT Sans", sans-serif;
   line-height: 20px;
   font-weight: bold;
   text-align: center;
@@ -461,7 +557,6 @@ legend {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
