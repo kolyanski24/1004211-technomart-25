@@ -45,12 +45,12 @@ a {
 }
 
 .main-header-logo {
+  display: block;
   width: 220px;
-  height: 42px;
+  height: 22px;
+  padding: 10px 0;
   background-color: #ee3643;
   text-align: center;
-  vertical-align: middle;
-  background-position: center;
   border-bottom: 5px solid #b52933;
 }
 
@@ -79,29 +79,33 @@ a {
   height: 42px;
   border-color: transparent;
 }
+
+input[type=search]::before {
+  content: "";
+  display: block;
+  background: url("../img/icon-search.svg") 50% 50% no-repeat;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 10px 0 0;
+  opacity: 0.5;
+  color: white;
+}
+
 .management li {
   position: relative;
   top: -17px;
   display: inline-block;
 }
 
-.management .bookmarks {
-  position: relative;
-  padding-left: 25px;
-}
-
 .bookmarks::before {
   content: "";
-  position: absolute;
-  left: -10px;
-
+  display: block;
+  background: url("../img/icon-bookmark.svg") 50% 50% no-repeat;
   width: 20px;
   height: 20px;
-
-  background-image: url("img/icon-bookmark.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: #ffffff;
+  float: left;
+  margin: 0 10px 0 0;
   opacity: 0.5;
   color: white;
 }
@@ -109,12 +113,12 @@ a {
 .basket::before {
   content: "";
   display: block;
-  background: url("img/icon-cart.svg") #ffffff no-repeat;
+  background: url("../img/icon-cart.svg") 50% 50% no-repeat;
   width: 20px;
   height: 20px;
   float: left;
-  margin: 0 6px 0 0;
-  z-index: 1;
+  margin: 0 10px 0 0;
+  opacity: 0.5;
   color: white;
 }
 
@@ -126,10 +130,10 @@ a {
   display: block;
   position: relative;
   padding: 12px 21px;
+  margin-right: -5px;
 }
 
 .header-section-bottom {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -148,9 +152,9 @@ a {
 }
 
 .header-middle {
-  margin-top: 46px;
   display: flex;
   justify-content: space-between;
+  padding-top: 45px;
 }
 
 .header-section-bottom address {
@@ -188,7 +192,6 @@ address strong {
 
 .top-menu {
   position: relative;
-  top: -60px;
   right: 25%;
   left: 25%;
 }
@@ -221,42 +224,77 @@ main {
 .colored-blocks {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 60px;
+}
+
+.colored-blocks button {
+  margin-left: 23px;
+  color: white;
+  height: 38px;
+  border: 5px solid transparent;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .materials {
   width: 300px;
   height: 125px;
   background-color: #ffbf47;
+  background-image: url("../img/icon-1.svg") 50% 50% no-repeat black;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .tool {
   width: 300px;
   height: 125px;
   background-color: #3bbce3;
+  background-image: url("../img/icon-2.svg") 50% 50% no-repeat white;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .equipment {
   width: 300px;
   height: 125px;
   background-color: #dc91d8;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .discount-block {
   width: 300px;
   height: 125px;
   background-color: #8ed78f;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .delievery-block {
   width: 300px;
   height: 125px;
   background-color: #ffc047;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .slider {
   width: 620px;
   height: 266px;
-  background: url("img/slider.jpg") 0 0 no-repeat;
+  background: url("../img/slider.jpg") 0 0 no-repeat;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  padding-left: 23px;
+  color: white;
 }
 
 .popular-button {
@@ -275,15 +313,58 @@ main {
   height: 145px;
   margin-right: 20px;
   margin-bottom: 20px;
+  border: 1px solid #eaeaea;
+}
+
+.bosch-brand {
+  background: url("../img/bosch.svg") 50% 50% no-repeat;
+}
+
+.makita {
+  background: url("../img/Makita.svg") 50% 50% no-repeat;
+}
+
+.dewalt {
+  background: url("../img/DeWALT.svg") 50% 50% no-repeat;
+}
+
+.interskol {
+  background: url("../img/interskol.svg") 50% 50% no-repeat;
+}
+
+.hitachi {
+  background: url("../img/Hitachi.svg") 50% 50% no-repeat;
+}
+
+.lg {
+  background: url("../img/LG.svg") 50% 50% no-repeat;
+}
+
+.aeg {
+  background: url("../img/AEG.svg") 50% 50% no-repeat;
+}
+
+.metabo {
+  background: url("../img/Metabo.svg") 50% 50% no-repeat;
 }
 
 .services {
   height: 522px;
-  width: 100%;
-  padding: 0;
   background-color: #f4f8f9;
   padding-right: 130px;
   padding-left: 130px;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-list li {
+  display: block;
+  width: 240px;
+  height: 62px;
+  color: white;
+  background-color: #32425c;
 }
 
 .separator {
@@ -467,6 +548,32 @@ main p {
   color: #ffffff;
   font-size: 18px;
   line-height: 24px;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.social {
+  background-color: #212a3a;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 5px solid #212a3a;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.social-vk {
+  background: url("../img/vk-icon.svg") 50% 50% no-repeat #212a3a;
+}
+
+.social-fb {
+  background: url("../img/fb-icon.svg") 50% 50% no-repeat #212a3a;
+}
+
+.social-insta {
+  background: url("../img/insta-icon.svg") 50% 50% no-repeat #212a3a;
 }
 
 .breadcrumbs {
