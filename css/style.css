@@ -101,6 +101,7 @@ a {
   background-image: url("img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #ffffff;
   opacity: 0.5;
   color: white;
 }
@@ -209,12 +210,85 @@ address strong {
 main {
   display: flex;
   flex-direction: column;
-  padding-right: 130px;
-  padding-left: 130px;
   color: black;
 }
 
+.main-section {
+  padding-right: 130px;
+  padding-left: 130px;
+}
+
+.colored-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.materials {
+  width: 300px;
+  height: 125px;
+  background-color: #ffbf47;
+}
+
+.tool {
+  width: 300px;
+  height: 125px;
+  background-color: #3bbce3;
+}
+
+.equipment {
+  width: 300px;
+  height: 125px;
+  background-color: #dc91d8;
+}
+
+.discount-block {
+  width: 300px;
+  height: 125px;
+  background-color: #8ed78f;
+}
+
+.delievery-block {
+  width: 300px;
+  height: 125px;
+  background-color: #ffc047;
+}
+
+.slider {
+  width: 620px;
+  height: 266px;
+  background: url("img/slider.jpg") 0 0 no-repeat;
+}
+
+.popular-button {
+  position: relative;
+}
+
+.manufacturers-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.manufacturers-list li {
+  display: block;
+  width: 220px;
+  height: 145px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.services {
+  height: 522px;
+  width: 100%;
+  padding: 0;
+  background-color: #f4f8f9;
+  padding-right: 130px;
+  padding-left: 130px;
+}
+
 .separator {
+  padding-right: 130px;
+  padding-left: 130px;
   display: flex;
   justify-content: space-between;
 }
@@ -441,6 +515,20 @@ h1 {
   text-transform: uppercase;
   color: #32425c;
   font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 button {
+  display: inline-block;
+  background-color: #ee3643;
+  border: 1px solid #ee3643;
+  border-radius: 3px;
+  color: white;
+  width: 253px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 label {
