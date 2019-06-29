@@ -24,13 +24,11 @@ a {
   font-size: 16px;
 }
 
-.main-navigation a:hover,
-.bottom-navigation a:hover {
+.main-navigation a:hover {
   background-color: #293449;
 }
 
-.main-navigation a:focus,
-.bottom-navigation a:focus {
+.main-navigation a:focus {
   background-color: #1d2739;
 }
 
@@ -157,57 +155,87 @@ input[type=search]::before {
   padding-top: 45px;
 }
 
-.header-section-bottom address {
+.header-contacts {
   font-size: 14px;
   line-height: 24px;
 }
 
-address strong {
+.header-contacts strong {
+  font-style: normal;
   display: inline-block;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
   border: 2px solid white;
-  width: 264px;
-  height: 40px;
-  vertical-align: middle;
+  padding: 10px 50px;
   text-align: center;
   text-decoration: none;
+}
+
+strong::before {
+  content: "";
+  display: block;
+  float: left;
+  position: relative;
+  right: 40px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-phone.svg");
+}
+
+.address-bottom {
+  margin: 15px;
 }
 
 .login-buttons {
   display: flex;
 }
 
-.login,
-.registration {
+.login a,
+.registration a {
   display: block;
+  color: black;
   background-color: #ffffff;
 }
 
-.login a,
-.registration a {
-  color: black;
+.login-link {
+  padding: 10px 25px 10px 15px;
+  margin-right: 10px;
+}
+
+.login-link::before {
+  display: block;
+  float: left;
+  content: "";
+  margin: 4px 10px 0 0;
+  height: 15px;
+  width: 20px;
+  background: url("../img/icon-login.svg") 50% 50% no-repeat white;
+  opacity: 0.5;
+
+}
+
+.registration-link {
+  padding: 10px 25px;
 }
 
 .top-menu {
-  position: relative;
-  right: 25%;
-  left: 25%;
+  width: 100%;
 }
 
 .top-menu li {
+  width: 14%;
   display: inline-block;
   list-style: none;
   background-color: #32425c;
   margin-right: -5px;
+  text-align: center;
+  border-bottom: 5px solid #293449;
 }
 
 .top-menu a {
   display: block;
-  width: auto;
   padding: 15px 30px;
-  vertical-align: middle;
 }
 
 main {
@@ -299,6 +327,11 @@ h3 {
 
 .popular-button {
   position: relative;
+}
+
+.catalog-popular {
+  display: flex;
+  justify-content: space-between;
 }
 
 .manufacturers-list {
@@ -465,12 +498,12 @@ main p {
 }
 
 .footer-logo {
+  display: block;
   width: 220px;
-  height: 42px;
+  height: 22px;
+  padding: 10px 0;
   background-color: #ee3643;
   text-align: center;
-  vertical-align: middle;
-  background-position: center;
   border-bottom: 5px solid #b52933;
 }
 
@@ -517,6 +550,14 @@ main p {
   color: #ffda96;
 }
 
+.bottom-navigation a:hover {
+  text-decoration: underline;
+}
+
+.bottom-navigation a:active {
+  opacity: 0.5;
+}
+
 .footer-bottom {
   font-size: 16px;
   line-height: 18px;
@@ -535,11 +576,6 @@ main p {
   line-height: 18px
 }
 
-.creators {
-  font-size: 16px;
-  line-height: 18px
-}
-
 .modal {
   display: none;
 }
@@ -554,14 +590,41 @@ main p {
   display: flex;
 }
 
+.footer-social a:hover,
+.footer-social a:active {
+  background-color: #ee3643;
+}
+
 .social {
   background-color: #212a3a;
   display: block;
   width: 40px;
   height: 40px;
-  border: 5px solid #212a3a;
+  border: 1px solid transparent;
   border-radius: 50%;
   margin-right: 5px;
+}
+
+.creators {
+  display: flex;
+  font-size: 16px;
+  line-height: 18px
+}
+
+.creators a {
+  color: #ffda96;
+}
+
+.creators a:hover {
+  text-decoration: underline;
+}
+
+.creators a:active {
+  color: #ee3643;
+}
+
+.feedback {
+  margin-right: 53px;
 }
 
 .social-vk {
@@ -574,6 +637,11 @@ main p {
 
 .social-insta {
   background: url("../img/insta-icon.svg") 50% 50% no-repeat #212a3a;
+}
+
+.container {
+  padding-right: 130px;
+  padding-left: 130px;
 }
 
 .breadcrumbs {
@@ -658,6 +726,21 @@ legend {
   height: 38px;
   background-color: #f7f3ec;
   padding: 13px 18px;
+}
+
+.price-form {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.price-field {
+  border: none;
+}
+
+.price-range input {
+  display: block;
+  width: 220px;
+  height: 80px;
+  background-color: #f7f3ec;
 }
 
 .catalog {
