@@ -87,7 +87,7 @@ a {
   justify-content: space-between;
 }
 
-.logo-search  input {
+.logo-search  input[type="search"] {
   font-size: 17px;
   line-height: 18px;
   display: block;
@@ -97,7 +97,7 @@ a {
   border-color: transparent;
 }
 
-input[type=search]::before {
+input[type="search"]::before {
   content: "";
   display: block;
   background: url("../img/icon-search.svg") 50% 50% no-repeat;
@@ -107,6 +107,10 @@ input[type=search]::before {
   margin: 0 10px 0 0;
   opacity: 0.5;
   color: white;
+}
+
+input[type="search"]:hover {
+  background-color: #212a3a;
 }
 
 .management li {
@@ -231,11 +235,20 @@ strong::before {
   width: 20px;
   background: url("../img/icon-login.svg") 50% 50% no-repeat white;
   opacity: 0.5;
-
 }
 
 .registration-link {
   padding: 10px 25px;
+}
+
+.login-link:hover,
+.registration-link:hover {
+  color: #ee3643;
+}
+
+.login-link:active,
+.registration-link:active {
+  color: #cacaca;
 }
 
 .top-menu {
@@ -252,6 +265,15 @@ strong::before {
   margin-right: -5px;
   text-align: center;
   border-bottom: 5px solid #293449;
+}
+
+.top-menu li:hover {
+  background-color: #293449;
+}
+
+.top-menu li:active {
+  background-color: #1d2739;
+  border-color: #1d2739;
 }
 
 .top-menu a {
