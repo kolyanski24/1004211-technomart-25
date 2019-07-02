@@ -66,32 +66,38 @@
   <main>
     <section class="main-section">
       <div class="colored-blocks">
-        <div class="materials">
-          <h3>Материалы</h3>
-          <button>На любой вкус</button>
+        <div class="colored-separator1">
+          <div class="materials-instruments">
+            <div class="materials">
+              <h3>Материалы</h3>
+              <button>На любой вкус</button>
+            </div>
+            <div class="tool">
+              <h3>Инструмент</h3>
+              <button>На все случаи</button>
+            </div>
+          </div>
+          <div class="slider">
+            <h2>Дрели</h2>
+            <p>Соседям на радость!</p>
+            <button class="slider-button">
+              Открыть каталог
+            </button>
+          </div>
         </div>
-        <div class="tool">
-          <h3>Инструмент</h3>
-          <button>На все случаи</button>
-        </div>
-        <div class="equipment">
-          <h3>Техника</h3>
-          <button>Для стройки</button>
-        </div>
-        <div class="discount-block">
-          <h3>Скидки 50%</h3>
-          <button>На 350 товаров</button>
-        </div>
-        <div class="delievery-block">
-          <h3>Доставка</h3>
-          <button>Бесплатно</button>
-        </div>
-        <div class="slider">
-          <h2>Дрели</h2>
-          <p>Соседям на радость!</p>
-          <button class="slider-button">
-            Открыть каталог
-          </button>
+        <div class="colored-separator2">
+          <div class="equipment">
+            <h3>Техника</h3>
+            <button>Для стройки</button>
+          </div>
+          <div class="discount-block">
+            <h3>Скидки 50%</h3>
+            <button>На 350 товаров</button>
+          </div>
+          <div class="delievery-block">
+            <h3>Доставка</h3>
+            <button>Бесплатно</button>
+          </div>
         </div>
       </div>
       <h1>Популярные товары:
@@ -167,11 +173,44 @@
         Хороший интернет-магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
-      <ul class="services-list">
-        <li>Доставка</li>
-        <li>Гарантия</li>
-        <li>Кредит</li>
-      </ul>
+      <div class="services-separator">
+        <ul class="services-list">
+          <li>Доставка</li>
+          <li>Гарантия</li>
+          <li>Кредит</li>
+        </ul>
+        <div class="services-description">
+          <div class="delievery-description">
+            <h1>Доставка</h1>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо
+              <br>
+              к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!<br>
+            </p>
+          </div>
+          <div class="warranty-description visually-hidden">
+            <h1>Гарантия</h1>
+            <p>
+              Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его возгаранием,<br>
+              вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+              Дом уж восстановите как-нибудь сами.
+            </p>
+          </div>
+          <div class="credit-description visually-hidden">
+            <h1>Кредит</h1>
+            <p>
+              Залезть в долговую яму стало проще!<br>
+              Кредитные консультанты придут вам на помощь.
+            </p>
+            <a href="#" class="credit-button">
+              Отправить заявку
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
     <div class="separator">
       <section class="company-description">
@@ -188,24 +227,18 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="about_us.html">
-          <button class="about">Подробнее о компании</button>
-        </a>
+        <a class="about" href="#">Подробнее о компании</a>
       </section>
       <section class="map">
         <h2>Контакты</h2>
-        <p>
+        <p class="u-can">
           Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
         <div class="map-image">
-          <img src="img/map.png" height="158" width="300" alt="ул.Б.Конюшенная19">
+          <img src="img/map.png" height="165" width="300" alt="ул.Б.Конюшенная19">
         </div>
-        <a href="write_us.html">
-          <button class="write">
-          Заблудились? Напишите нам!
-          </button>
-        </a>
+        <a class="write" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </main>
