@@ -243,7 +243,9 @@ strong::before {
 }
 
 .top-menu li {
-  width: 14%;
+  position: relative;
+  right: 35px;
+  width: 14.2857143%;
   display: inline-block;
   list-style: none;
   background-color: #32425c;
