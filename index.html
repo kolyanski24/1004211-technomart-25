@@ -49,6 +49,13 @@
             <b class="registration">
               <a class="registration-link" href="#">Регистрация</a>
             </b>
+            <div class="visually-hidden authorized-user">
+              <a class="authorized-name" href="#">Равшан Джамшутович</a>
+              <div class="authorized-buttons">
+                <a href="#">Мои заказы</a>
+                <a href="#">Личный кабинет</a>
+              </div>
+            </div>
           </div>
         </div>
         <ul class="top-menu">
@@ -317,7 +324,6 @@
     </form>
     <script>
       var link = document.querySelector(".write");
-
       var popup = document.querySelector(".modal-write");
       var close = popup.querySelector(".modal-close");
 
@@ -328,7 +334,14 @@
 
       close.addEventListener("click", function (evt) {
         evt.preventDefault();
-        popup.classList.remove(".modal-show");
+        popup.classList.remove("modal-show");
+      });
+
+      var link1 = document.querySelector(".login-link");
+
+      link1.addEventListener("click", function (evt) {
+        evt.preventDefault();
+
       });
     </script>
   </section>
